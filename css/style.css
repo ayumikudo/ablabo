@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+body{
+	font-family: 'Noto Sans JP', 'Muli', sans-serif;
+	font-size: 62.5%;
+	color: #333333;
+}
+a {
+	color: #333333;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+button {
+	font-family: 'Noto Sans JP', 'Muli', sans-serif;
+	font-size: 1.6em;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+/* メインビジュアル */
+#mainvisual {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-image: url(../images/mainvisual.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#mainvisual::before {
+	background: rgba(247, 139, 61, 0.3);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+#mainvisual .box{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	text-align: center;
+}
+#mainvisual .catch_1{
+	font-size: 4.8em;
+	font-weight: bold;
+	letter-spacing: 4px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+#mainvisual .catch_2{
+	font-size: 2.4em;
+	letter-spacing: 10px;
+	color: #F77B21;
+	margin-top: 20px;
+}
+/* ヘッダー */
+header {
+	display: flex;
+	align-items: center;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	background: #ffffff;
+}
+header h1 img{
+	width: 100px;
+	height: auto;
+	padding-left: 10px;
+}
+header nav ul{
+	display: flex;
+	flex: 1;
+}
+header nav ul li{
+	font-size: 1.6em;
+	font-weight: bold;
+	padding: 0 20px;
+}
+header nav ul li a:hover{
+	color: #F77B21;
+}
+header .entry {
+	width: 100px;
+	height: 54px;
+	background: #F77B21;
+	margin-left: auto;
+	padding: 0;
+	color: #fff;
+	font-weight: bold;
+}
+header .entry:hover {
+	background: #EC4C4C;
+}
+header .sp_menu {
+	display: none;
+}
+/* メイン見出し */
+h2 {
+	font-size: 4em;
+	font-weight: bold;
+	color: #F77B21;
+	text-align: center;
+	margin-bottom: 50px;
+}
+h2 span {
+	display: block;
+	margin-top: 10px;
+	font-size: small;
+	letter-spacing: 2px;
+	color: #333;
+}
+/* メイン幅、余白 */
+main {
+	width: 80%;
+	margin: 0 auto;
+}
+main section {
+	margin: 160px 0;
+}
+/* インタビュー */
+#interview {
+	position: relative;
+}
+#interview .interview_list {
+	display: flex;
+	justify-content: space-between;
+}
+#interview .interview_list li a{
+	position: relative;
+	font-size: 1.4em;
+	display: block;
+	width: 240px;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	transition: .3s;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+#interview .interview_list li a:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#interview .interview_list li img {
+	width: 240px;
+	height: 280px;
+}
+#interview .interview_list li h3 {
+	display: inline-block;
+	padding: 8px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #EC4C4C;
+	color: #fff;
+}
+#interview .interview_list li h4 {
+	display: inline-block;
+	position: relative;
+	top: -90px;
+	left: 10px;
+	color: #F77B21;
+	font-size: 2em;
+	font-weight: bold;
+}
+#interview .interview_list li p {
+	display: block;
+	box-sizing: border-box;
+	padding: 0 20px 30px;
+	box-sizing: border-box;
+	background-color: #fff;
+	line-height: 1.8em;
+}
+/* オレンジ背景1 */
+.orange_bg_1 {
+	display: block;
+	width: 150%;
+	height: 300px;
+	background: rgba(247, 123, 33, 0.1);
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%) rotate(10deg);
+	transform: translateX(-50%) rotate(10deg);
+	z-index: -10;
+}
+/* コンセプト */
+#concept {
+	background-image: url(../images/concept.png);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#concept article {
+	text-align: center;
+	margin-bottom: 160px;
+}
+#concept article p {
+	font-size: 1.6em;
+	line-height: 2em;
+}
+#concept aside {
+	width: 425px;
+	height: auto;
+	padding: 30px 50px;
+	box-sizing: border-box;
+	text-align: center;
+	background: #F77B21;
+}
+#concept aside h3 {
+	color: #fff;
+	font-weight: bold;
+	font-size: 2.4em;
+	line-height: 2em;
+	letter-spacing: 10px;
+}
+#concept aside button {
+	background: #F77B21;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	margin-top: 20px;
+	padding: 10px 40px;
+	border: 2px solid #fff;
+	color: #fff;
+	font-weight: bold;
+}
+#concept aside button:hover {
+	background: #fff;
+	color: #F77B21;
+	border: 2px solid #F77B21;
+}
+/* ワーク */
+#work .work_list {
+	display: flex;
+	justify-content: space-around;
+}
+#work .work_list li ul {
+	margin: 0;
+	padding: 0;
+}
+#work .work_list li a {
+	display: block;
+	position: relative;
+	padding: 0;
+	font-size: 2em;
+	color: #fff;
+	transition: .3s;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+#work .work_list li a:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#work .work_list li img {
+	transition: .3s;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	vertical-align: bottom;
+}
+#work .work_list li p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(247, 123, 33, 0.3);
+	letter-spacing: 10px;
+}
+/* メッセージ */
+#message {
+	position: relative;
+}
+#message .message_container {
+	display: flex;
+	justify-content: space-around;
+}
+#message .message_img {
+	margin-right: 20px;
+}
+#message .message_txt h3 {
+	font-size: 2.4em;
+	font-weight: bold;
+	color: #EC4C4C;
+	margin: 0 0 20px;
+}
+#message .message_txt p {
+	font-size: 1.6em;
+	line-height: 2em;
+}
+/* オレンジ背景2 */
+.orange_bg_2 {
+	display: block;
+	width: 150%;
+	height: 300px;
+	background: rgba(247, 123, 33, 0.1);
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%) rotate(-10deg);
+	transform: translateX(-50%) rotate(-10deg);
+	z-index: -10;
+}
+/* フッター */
+footer {
+	text-align: center;
+}
+footer img {
+	width: 84px;
+	height: auto;
+}
+footer p {
+	display: block;
+	padding: 20px;
+}
+/* ふわっと表示 */
+.fadein {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+/* ########### 640px以下 ########### */
+
+@media screen and (max-width: 640px) {
+	body {
+		position: relative;
+		margin-bottom: 70px;
+	}
+	/* 表示順 */
+	.sp_order {
+		display: flex;
+		flex-direction: column;
+	}
+	/* メインビジュアル */
+	#mainvisual {
+		order: 2;
+		background-image: url(../images/mainvisual_sp.png);
+	}
+	/* ヘッダー */
+	header {
+		order: 1;
+		position: fixed;
+		top:0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+	}
+	header .sp_inner {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 5px 0;
+	}
+	header h1 {
+		margin-right: auto;
+	}
+	header h1 img{
+		width: 80px;
+		height: auto;
+	}
+	header .sp_menu {
+		display: block;
+		padding-right: 10px;
+	}
+	header .sp_menu .sp_menu_icon {
+		display: block;
+	}
+	header .sp_menu .sp_menu_icon img {
+		width: 30px;
+		height: 30px;
+	}
+	header nav {
+		display: none;
+	}
+	header nav ul {
+		display: block;
+		text-align: center;
+	}
+	header nav ul li {
+		margin: 30px 0;
+	}
+	header .entry{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 100;
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 20px 0;
+	}
+	/* メイン幅、余白 */
+	main section {
+		margin: 60px 0;
+	}
+	/* インタビュー */
+	#interview .interview_list {
+		flex-wrap: wrap;
+	}
+	#interview .interview_list li{
+		margin-bottom: 30px;
+	}
+	#interview .interview_list li a{
+		width: 100%;
+	}
+	#interview .interview_list li img {
+		width: 100%;
+		height: auto;
+	}
+	/* コンセプト */
+	#concept {
+		background-image: none;
+	}
+	#concept article {
+		margin-bottom: 20px;
+	}
+	#concept aside {
+		width: 100%;
+		height: auto;
+		padding: 30px;
+	}
+	#concept aside h3 {
+		font-size: 1.4em;
+		line-height: 2em;
+	}
+	/* ワーク */
+	#work .work_list {
+		display: block;
+	}
+	#work .work_list li:nth-child(1) {
+		margin-bottom: 20px;
+	}
+	#work .work_list li img {
+		width: 100%;
+	}
+	/* メッセージ */
+	#message .message_container {
+		display: block;
+	}
+	#message .message_container .message_img {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	#message .message_container .message_img img {
+		width: 100%;
+	}
+	#message .message_txt h3 {
+		line-height: 1.8em;
+	}
+	/* オレンジ背景2 */
+	.orange_bg_1, .orange_bg_2 {
+		display: none;
+	}
+	/* 左寄せ、改行オフ */
+	.description {
+		text-align: left;
+	}
+	.description br {
+		display: none;
+	}
+}
